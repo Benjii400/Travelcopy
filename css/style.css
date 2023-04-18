@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: rgb(80, 70, 70);
+    --primary: #86B817;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -64,7 +64,7 @@
 
 
 /*** Navbar ***/
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link  {
     font-family: 'Nunito', sans-serif;
     position: relative;
     margin-right: 25px;
@@ -76,14 +76,18 @@
     transition: .5s;
 }
 
-.sticky-top.navbar-light .navbar-nav .nav-link {
+.sticky-top.navbar-light .navbar-nav .nav-link , .h3{
+    padding: 20px 0;
+    color: var(--dark) !important;
+}
+.sticky-top.navbar-light a h3{
     padding: 20px 0;
     color: var(--dark) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary) !important;
+    color: var(--dark) !important;
 }
 
 .navbar-light .navbar-brand img {
@@ -140,7 +144,7 @@
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--primary);
+        background: var(--dark);
         transition: .5s;
     }
 
@@ -183,7 +187,7 @@
     height: 2px;
     top: 4px;
     left: -40px;
-    background: var(--primary);
+    background: var(--dark);
     z-index: -1;
 }
 
@@ -194,7 +198,7 @@
     height: 2px;
     bottom: 5px;
     left: -60px;
-    background: var(--primary);
+    background: var(--dark);
     z-index: -1;
 }
 
@@ -216,7 +220,7 @@
 }
 
 .service-item:hover {
-    background: var(--primary);
+    background: var(--dark);
 }
 
 .service-item * {
@@ -279,13 +283,13 @@
 
 .team-item .btn {
     background: #FFFFFF;
-    color: var(--primary);
+    color: var(--dark);
     border-radius: 20px;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--dark);
 }
 
 .team-item .btn:hover {
-    background: var(--primary);
+    background: var(--dark);
     color: #FFFFFF;
 }
 
@@ -333,8 +337,8 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--primary) !important;
+    background: var(--dark) !important;
+    border-color: var(--dark) !important;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
@@ -360,8 +364,8 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: var(--dark);
+    border-color: var(--dark);
 }
 
 
@@ -381,7 +385,7 @@
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: var(--dark);
 }
 
 .footer .btn.btn-link {
